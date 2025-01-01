@@ -1,0 +1,23 @@
+{
+  "name": "encrypted-communication-app",
+  "version": "1.0.0",
+  "description": "A secure end-to-end encrypted communication application using Electron and Node.js.",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run start --prefix server\" \"npm run start --prefix client\"",
+    "build": "npm run build --prefix server && npm run build --prefix client",
+    "test": "npm run test --prefix server && npm run test --prefix client"
+  },
+  "dependencies": {
+    "concurrently": "^6.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/encrypted-communication-app.git"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}
